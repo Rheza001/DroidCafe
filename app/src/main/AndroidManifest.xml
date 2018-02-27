@@ -19,7 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OrderActivity">
+        <activity android:name=".OrderActivity"
+            android:label="@string/title_activity_order"
+            android:parentActivityName="com.example.android.droidcafe.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
